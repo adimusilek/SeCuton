@@ -1,4 +1,4 @@
-package ${package}.driverutil
+package ${package}
 
 import assertk.fail
 import io.appium.java_client.android.AndroidDriver

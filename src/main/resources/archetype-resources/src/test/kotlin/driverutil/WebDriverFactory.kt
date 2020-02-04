@@ -1,4 +1,4 @@
-package ${package}.driverutil
+package ${package}
 
 import logger
 import org.openqa.selenium.WebDriver

@@ -1,4 +1,4 @@
-package ${package}.driverutil
+package ${package}
 
 import assertk.fail
 import ${package}.pageobjects.AbstractPage

@@ -1,4 +1,4 @@
-package ${package}.step_definitions
+package ${package}
 
 import ${package}.driverutil.DriverType
 import io.cucumber.core.api.Scenario

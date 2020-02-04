@@ -1,4 +1,4 @@
-package ${package}.step_definitions
+package ${package}
 
 import assertk.assertThat
 import assertk.assertions.isEqualTo

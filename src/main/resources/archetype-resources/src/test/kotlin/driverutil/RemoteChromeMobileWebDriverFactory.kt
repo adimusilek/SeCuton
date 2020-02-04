@@ -1,4 +1,4 @@
-package ${package}.driverutil
+package ${package}
 
 import io.appium.java_client.AppiumDriver
 import io.appium.java_client.android.AndroidDriver

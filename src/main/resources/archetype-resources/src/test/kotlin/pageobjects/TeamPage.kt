@@ -1,4 +1,4 @@
-package ${package}.pageobjects
+package ${package}
 
 import ${package}.driverutil.WebDriverSession
 import org.openqa.selenium.By

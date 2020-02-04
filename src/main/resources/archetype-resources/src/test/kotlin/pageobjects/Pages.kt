@@ -1,4 +1,4 @@
-package ${package}.pageobjects
+package ${package}
 
 enum class PageUrls(val subUrl: String) {
     HOME("/"),

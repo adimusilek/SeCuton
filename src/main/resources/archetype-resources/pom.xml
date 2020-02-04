@@ -121,7 +121,7 @@
     </dependencies>
 
     <build>
-        <testSourceDirectory>../archetype-resources_old/src/test/kotlin</testSourceDirectory>
+        <testSourceDirectory>/src/test/kotlin</testSourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
@@ -162,7 +162,7 @@
                 </executions>
                 <configuration>
                     <!-- Required properties -->
-                    <sourceRunnerTemplateFile>src/test/resources/parallel/cucable.template/CucableJavaTemplate.java
+                    <sourceRunnerTemplateFile>src/test/resources/parallel/cucable/template/CucableJavaTemplate.java
                     </sourceRunnerTemplateFile>
                     <sourceFeatures>src/test/resources/features</sourceFeatures>
                     <generatedFeatureDirectory>${project.build.directory}/parallel/features</generatedFeatureDirectory>
