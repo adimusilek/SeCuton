@@ -123,3 +123,15 @@ Example of runtime configuration for running a test on a emulated Android device
         -Dselenium.grid=http://localhost:4723
         -Ddriver.version=2.34
         -Ddevice.id="emulator-5554"
+
+
+
+### how to build the project by its archetype
+
+     mvn archetype:generate \  
+        -DarchetypeArtifactId=secuton-archetype \
+        -DarchetypeGroupId=at.co.boris \
+        -DarchetypeVersion=1.0 \
+        -DgroupId=<deine gewuenschte packagestruktur(eg.: at.wrwks.dwh)> \
+        -DartifactId=<wie das artifact heissen soll(e.g.: dwhTest)> \
+        -DinteractiveMode=false
