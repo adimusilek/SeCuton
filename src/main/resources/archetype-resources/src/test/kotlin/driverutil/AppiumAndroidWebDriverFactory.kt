@@ -1,3 +1,8 @@
+#set( $dollar = '$' )
+#set( $curlyOpen = '{' )
+#set( $curlyClose = '}' )
+#set( $bracketOpen = '(' )
+#set( $bracketClose = ')' )
 package ${package}
 
 import assertk.fail
@@ -27,7 +32,7 @@ class AppiumAndroidWebDriverFactory : RemoteWebDriverFactory() {
 
         caps.setCapability("noReset", true)
 
-        val appiumServer = URL("${getRemoteTestingServer()}/wd/hub")
+        val appiumServer = URL("$dollar$curlyOpen getRemoteTestingServer$bracketOpen$bracketClose$curlyClose/wd/hub")
 
         try {
             webDriver = AndroidDriver<AndroidElement>(appiumServer, caps)

@@ -1,3 +1,10 @@
+#set( $dollar = '$' )
+#set( $curlyOpen = '{' )
+#set( $curlyClose = '}' )
+#set( $bracketOpen = '(' )
+#set( $bracketClose = ')' )
+
+
 package ${package}
 
 import io.appium.java_client.AppiumDriver
@@ -13,7 +20,7 @@ class RemoteChromeMobileWebDriverFactory : RemoteWebDriverFactory() {
     override fun createDriver(): WebDriver {
 
         caps.browserName = "chrome"
-        caps.version = "mobile-${getBrowserVersion()}"
+        caps.version = "mobile-$dollar$curlyOpen getBrowserVersion$bracketOpen$bracketClose$curlyClose"
         caps.setCapability("adbExecTimeout", 120000)
 
         val options = ChromeOptions()
@@ -25,7 +32,7 @@ class RemoteChromeMobileWebDriverFactory : RemoteWebDriverFactory() {
 
         options.setCapability("sessionTimeout", "15m")
 
-        webDriver = AppiumDriver<AndroidElement>(URI.create("${getRemoteTestingServer()}/wd/hub").toURL(), options)
+        webDriver = AppiumDriver<AndroidElement>(URI.create("$dollar$curlyOpen getRemoteTestingServer$bracketOpen$bracketClose$curlyClose/wd/hub").toURL(), options)
         webDriver.manage().window().maximize()
         return webDriver
     }

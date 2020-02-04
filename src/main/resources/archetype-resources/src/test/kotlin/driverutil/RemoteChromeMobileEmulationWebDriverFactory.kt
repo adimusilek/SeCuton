@@ -1,3 +1,10 @@
+#set( $dollar = '$' )
+#set( $curlyOpen = '{' )
+#set( $curlyClose = '}' )
+#set( $bracketOpen = '(' )
+#set( $bracketClose = ')' )
+
+
 package ${package}
 
 import org.openqa.selenium.WebDriver
@@ -19,7 +26,7 @@ class RemoteChromeMobileEmulationWebDriverFactory : RemoteWebDriverFactory() {
         mobileEmulation["deviceName"] = System.getProperty("emulated.device", emulatedDevices.Pixel_2.phoneName)
         options.setExperimentalOption("mobileEmulation", mobileEmulation)
 
-        webDriver = RemoteWebDriver(URI.create("${getRemoteTestingServer()}/wd/hub").toURL(), options)
+        webDriver = RemoteWebDriver(URI.create("$dollar$curlyOpen getRemoteTestingServer$bracketOpen$bracketClose$curlyClose/wd/hub").toURL(), options)
         return webDriver
     }
 

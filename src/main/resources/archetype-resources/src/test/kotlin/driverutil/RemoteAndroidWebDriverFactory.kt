@@ -1,3 +1,9 @@
+#set( $dollar = '$' )
+#set( $curlyOpen = '{' )
+#set( $curlyClose = '}' )
+#set( $bracketOpen = '(' )
+#set( $bracketClose = ')' )
+
 package ${package}
 
 import io.appium.java_client.android.AndroidDriver
@@ -23,8 +29,7 @@ class RemoteAndroidWebDriverFactory : RemoteWebDriverFactory() {
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2")
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 12000)
 
-        webDriver = AndroidDriver<AndroidElement>(URL("${getRemoteTestingServer()}/wd/hub"), caps)
-        //webDriver = RemoteWebDriver(URI.create("${getRemoteTestingServer()}/wd/hub").toURL(), caps)
+        webDriver = AndroidDriver<AndroidElement>(URL("$dollar$curlyOpen getRemoteTestingServer$bracketOpen$bracketClose$curlyClose/wd/hub"), caps)
         return webDriver
 
     }
