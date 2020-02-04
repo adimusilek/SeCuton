@@ -7,17 +7,17 @@
 
 
     <fileSets>
-        <fileSet filtered="true" encoding="UTF-8">
+        <fileSet encoding="UTF-8" packaged="true" filtered="true">
+            <directory>src/test/kotlin</directory>
+            <includes>
+                <include>**/*.kt</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
             <directory>src/test/resources</directory>
             <includes>
                 <include>**/*.java</include>
                 <include>**/*.feature</include>
-            </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8" packaged="true">
-            <directory>src/test/kotlin</directory>
-            <includes>
-                <include>**/*.kt</include>
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8">
@@ -26,14 +26,9 @@
                 <include>**/*.png</include>
             </includes>
         </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-            <includes>
-                <include>LICENSE.txt</include>
-            </includes>
-        </fileSet>
         <fileSet encoding="UTF-8">
             <includes>
-                <include>.gitignore</include>
+                <include>LICENSE.txt</include>
                 <include>README.md</include>
             </includes>
         </fileSet>

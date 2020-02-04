@@ -1,4 +1,4 @@
-package ${package}
+package ${groupId}
 
 import assertk.fail
 import ${groupId}.driverutil.PageNotFoundException

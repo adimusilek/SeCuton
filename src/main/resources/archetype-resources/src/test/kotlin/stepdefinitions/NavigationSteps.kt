@@ -1,4 +1,4 @@
-package ${package}
+package ${groupId}
 
 import ${package}.pageobjects.MainPage
 import ${package}.pageobjects.PageUrls

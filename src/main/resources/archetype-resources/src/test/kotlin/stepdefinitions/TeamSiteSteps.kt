@@ -1,4 +1,4 @@
-package ${package}
+package ${groupId}
 
 import assertk.assertThat
 import assertk.assertions.contains

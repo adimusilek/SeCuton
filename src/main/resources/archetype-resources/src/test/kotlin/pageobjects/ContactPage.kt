@@ -1,4 +1,4 @@
-package ${package}
+package ${groupId}
 
 import ${package}.driverutil.WebDriverSession
 
