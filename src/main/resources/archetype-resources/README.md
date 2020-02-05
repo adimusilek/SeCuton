@@ -7,6 +7,6 @@
         -DarchetypeArtifactId=secuton-archetype \
         -DarchetypeGroupId=at.co.boris \
         -DarchetypeVersion=1.0 \
-        -DgroupId=<deine gewuenschte packagestruktur(eg.: at.wrwks.dwh)> \
-        -DartifactId=<wie das artifact heissen soll(e.g.: dwhTest)> \
+        -DgroupId=<deine gewuenschte packagestruktur(eg.: at.test.some)> \
+        -DartifactId=<wie das artifact heissen soll(e.g.: someTest)> \
         -DinteractiveMode=false
